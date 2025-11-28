@@ -7,11 +7,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <audio id="background-music" loop hidden>
-        <source src="Bạc Phận (Remix).mp3" type="audio/mp3">
-        Trình duyệt của bạn không hỗ trợ thẻ audio.
-    </audio>
-
     <h1 class="header-title">
         12A - MẠNH MẼ, TỰ TIN, SẴN SÀNG BỨT PHÁ!
     </h1>
@@ -43,26 +38,6 @@
     <div class="footer-info">
         <p>Quản lí web: <span class="highlight-bold">Vàng Thị Phượng</span> - 0363339923</p>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var audio = document.getElementById('background-music');
-            var playPromise = audio.play();
-
-            if (playPromise !== undefined) {
-                playPromise.then(_ => {}).catch(error => {
-                    audio.removeAttribute('hidden');
-                });
-            }
-        });
-
-        document.addEventListener('click', function() {
-            var audio = document.getElementById('background-music');
-            if (audio.paused) {
-                audio.play();
-            }
-        });
-    </script>
     
     <div class="snow-container">
         <div class="snow-flake"></div><div class="snow-flake"></div><div class="snow-flake"></div>
